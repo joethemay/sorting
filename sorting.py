@@ -8,7 +8,7 @@ def swap(alist, index):
     b = alist[index+1]
     alist[index] = b
     alist[index+1] = a
-    return (alist)
+    return (alist) #returns alist
 
 def bsort(alist):
     swaps = True
@@ -21,8 +21,8 @@ def bsort(alist):
     return (alist)
 
 def mini(alist):
-    answer = alist[0]
-    for item in alist:
+    answer = alist[0] #sets mini as value [0]
+    for item in alist: #checks all lists for [0]
         if item< answer:
             answer = item
     return (answer)
