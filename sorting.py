@@ -23,9 +23,9 @@ def bsort(alist):
 def mini(alist):
     answer = alist[0] #sets mini as value [0]
     for item in alist: #checks all lists for [0]
-        if item< answer:
-            answer = item
-    return (answer)
+        if item< answer: #checks if item is greater than answer
+            answer = item #if item is greater then answer then item is output as answer
+    return (answer) #output/return answer
 
 def ssort(alist):
     blist = []
@@ -33,7 +33,7 @@ def ssort(alist):
         N = mini(alist)
         alist.remove (N)
         blist.append(N)
-    return (blist)
+    return (blist) #returns (blist)
 
     
 def mergeSort(alist)
